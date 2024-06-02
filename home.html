@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>樂檸漢堡_home </title>
+  <link rel="stylesheet" href="./home.css">
+  <script src="./home.js"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+  <div class="home-container " style="overflow-x: clip;">
+    <!-- header -->
+    <header
+      class="nav-header justify-content-between px-0 py-4 navbar navbar-expand-md fixed-top bg-transparent d-flex">
+      <div class="container-fluid row  ">
+
+        <a href="#" class="navbar-brand col-5 col-md-4 nav-logo mx-3"><img src="./img/thefreen_logo 1.png" /></a>
+
+        <!-- 電腦版菜單 -->
+        <div class="header-navibar col-md-4 col-6 ms-auto d-none d-md-inline-flex">
+          <button class="nav-button container-fluid shadow-drop-2-center bn-transition">
+            <a href="./about.html"> <span class="nav-button-text">關於樂檸</span></a>
+          </button>
+          <button class="nav-button container-fluid shadow-drop-2-center bn-transition">
+            <a href="./store.html"> <span class="nav-button-text">門市資訊</span></span></a>
+          </button>
+          <button class="nav-button container-fluid shadow-drop-2-center bn-transition">
+            <a href="./menu.html"> <span class="nav-button-text">樂檸菜單</span></span></a>
+          </button>
+        </div>
+
+        <!-- 手機版菜單 -->
+        <button class="navbar-toggler d-md-none d-block col-2 border-0" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end header-navibar-sm d-md-none d-block" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header mt-4 rounded-pill px-5">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">thefreen burger</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./home.html">首頁</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">關於樂檸</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./store.html">門市資訊</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="./menu.html">樂檸菜單</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </header>
+    <!-- sec1 -->
+    <section class="section1 container-fluid">
+
+      <!-- sec1上方主標+漢堡圖 -->
+      <div class="banner-main px-md-5 px-1 justify-content-md-center justify-content-md-end align-items-md-center row">
+        <!-- 大標題 -->
+        <div class="banner-maintext col-md-6 col-12 order-md-1 order-2">
+          <h1>簡單的漢堡<br>
+            不簡單的樂檸漢堡</h1>
+          <h2>thefreen burger</h2>
+        </div>
+        <!-- 漢堡圖 -->
+        <div class="banner-img col-md-6 col-12 order-md-2 order-1 mt-auto my-md-auto">
+          <img class="rounded mx-auto d-block" src="./img/bn_漢堡.png" alt="banner漢堡圖">
+        </div>
+
+      </div>
+
+      <!-- sec1下方小字資訊列 手機版-->
+      <div class="banner-smtext px-2 py-3 mx-auto row justify-content-center d-md-none">
+
+        <div class="smtext-con mx-auto my-auto col-6 text-center">
+
+          <h6>ESG</h6>
+          <p>樂檸ESG永續影響力<br>
+            永續堅持樂愛地球</p>
+        </div>
+
+        <div class="smtext-con mx-auto my-auto col-6 text-center ">
+          <h6>wheat</h6>
+          <p>台灣小麥自製雲感麵包<br>
+            大幅降低食物里程</p>
+        </div>
+
+        <div class="smtext-con mx-auto my-auto col-6 text-center ">
+          <h6>vegetable</h6>
+          <p>全年台灣水耕蔬菜<br>
+            減少碳足跡保護水資源</p>
+        </div>
+
+        <div class="smtext-con mx-auto my-auto col-6 text-center ">
+          <h6>BEEF</h6>
+          <p>草飼牛肉自然放牧<br>
+            恢復土壤生命力</p>
+        </div>
+
+      </div>
+
+      <!-- sec1下方小字資訊列 md以上-->
+      <div class="banner-smtext px-5 py-3 d-md-flex justify-content-center flex-md-nowrap flex-wrap d-none ">
+
+        <div class="smtext-con mx-auto my-auto">
+          <h6>ESG</h6>
+          <p>樂檸ESG永續影響力<br>
+            永續堅持樂愛地球</p>
+        </div>
+
+        <div class="vr mx-auto"></div>
+
+        <div class="smtext-con mx-auto my-auto">
+          <h6>wheat</h6>
+          <p>台灣小麥自製雲感麵包<br>
+            大幅降低食物里程</p>
+        </div>
+
+        <div class="vr mx-auto"></div>
+
+        <div class="smtext-con mx-auto my-auto">
+          <h6>vegetable</h6>
+          <p>全年台灣水耕蔬菜<br>
+            減少碳足跡保護水資源</p>
+        </div>
+
+        <div class="vr mx-auto"></div>
+
+        <div class="smtext-con mx-auto my-auto">
+          <h6>BEEF</h6>
+          <p>草飼牛肉自然放牧<br>
+            恢復土壤生命力</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- sec2 -->
+    <section class="section2 row justify-content-center">
+      <div class="col-11 row py-md-5 py-2 px-0 mx-0 justify-content-center sec2-conatain">
+
+        <div class="col-md-5 col-12 row flex-column justify-content-between">
+
+          <div class="sec2-text-tp ">
+            <h6>location of<br>thefreen burger</h6>
+            <h4>門市資訊</h4>
+          </div>
+          <div class="sec2-text-md p-0">
+            <h3>台中</h3>
+          </div>
+          <div class="sec2-text-ed">
+            <h5>TAICHUANG</h5>
+          </div>
+        </div>
+
+        <div class="col-md-7 col-12 row p-0">
+
+          <div class="col-12 py-2 store-grid">
+            <div class="store-container store-grid-r"><img src="./img/門市圖片/台中高工南和門市.jpg" class="store-img"></div>
+            <div class="flex-grow-1 store-text store-grid-m">
+              <h5>高工南和門市</h5>
+              <p>台中市南區高工路399號</p>
+            </div>
+            <button class="btn store-grid-l" type="button"> <i class="bi bi-arrow-up-right-circle-fill arrow-icon"
+                hover></i></button>
+          </div>
+
+          <div class="col-12 py-2 store-grid">
+            <div class="store-container store-grid-r"><img src="./img/門市圖片/台中朝馬虎城門市.jpeg" class="store-img"></div>
+            <div class="flex-grow-1 store-text store-grid-m">
+              <h5>朝馬虎城門市</h5>
+              <p>台中市西屯區河南路三段120號3樓（老虎城購物中心3樓）</p>
+            </div>
+            <button class="btn store-grid-l" type="button"> <i class="bi bi-arrow-up-right-circle-fill arrow-icon"
+                hover></i></button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- sec3 -->
+
+    <section class="run-line-block">
+      <div class="run-text_wrapper">
+
+        <div class="run-part_wrap news-ticker">
+          <div class="one-run-part">
+            <div>threen</div>
+            <div class="divider-dot"></div>
+            <div>burger</div>
+            <div class="divider-dot"></div>
+            <div>thereen</div>
+            <div class="divider-dot"></div>
+            <div>burger</div>
+          </div>
+          <div class="divider-dot"></div>
+        </div>
+
+        <div class="run-part_wrap news-ticker">
+          <div class="one-run-part">
+            <div>threen</div>
+            <div class="divider-dot"></div>
+            <div>burger</div>
+            <div class="divider-dot"></div>
+            <div>thereen</div>
+            <div class="divider-dot"></div>
+            <div>burger</div>
+          </div>
+          <div class="divider-dot"></div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- 水平移動bento sec3 -->
+    <section id="sectionPin">
+      <div class="pin-wrap-sticky">
+
+        <div class="pin-wrap">
+
+          <div class="activity-container ">
+
+            <div class="image-container img-one bento-cardContainer bento-card-hover-1">
+              <div class="bento-card bento-bk-dutty">
+                <h5>小麥</h5>
+                <h6>台灣小麥責任使用</h6>
+              </div>
+            </div>
+
+            <div class="image-container img-three">
+              <video autoplay loop muted>
+                <source src="./img/理念卡片圖/dutty.mp4">
+              </video>
+              <div class="overlay overlay-text-lg">
+                <h3>DUTTY</h3>
+                <h4>自己的麵包當然自己做！</h4>
+              </div>
+            </div>
+
+            <div class="image-container img-four bento-cardContainer bento-card-hover-2">
+              <div class="bento-card bento-bk-beff">
+                <h5>牛肉</h5>
+                <h6>天然純淨草飼放牧牛肉</h6>
+              </div>
+            </div>
+
+            <div class="image-container img-five">
+              <img src="./img/理念卡片圖/全面使用非籠飼雞蛋.jpg">
+              <div class="overlay overlay-text-sm">
+                <h4>全面使用非籠飼雞蛋</h4>
+              </div>
+            </div>
+
+            <div class="image-container img-six">
+              <img src="./img/理念卡片圖/新鮮。專業。責任農產.jpg">
+              <div class="overlay overlay-text-lg">
+                <h3>FRESH</h3>
+                <h4>新鮮。專業。責任農產</h4>
+              </div>
+            </div>
+
+            <div class="image-container img-seven">
+              <img src="./img/理念卡片圖/真誠的食物，帶來真誠的幸福.jpg">
+              <div class="overlay overlay-text-lg">
+                <h3>REALL</h3>
+                <h4>真誠的食物，帶來真誠的幸福</h4>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- sec4 -->
+
+    <section>
+
+      <div class="sec4">
+        <!-- <video autoplay muted loop src="./mp4/起司流成河大俠牛堡重磅登場.mp4" id="#bkcover-video"></video> -->
+        <img src="./gif/起司流成河大俠牛堡重磅登場.gif" id="bkcover-img">
+        <section>
+          <h1>
+            <span>FAITTH</span>
+            <span>來樂檸記得穿短褲</span>
+            <span>套餐免費升級</span>
+          </h1>
+          <i class="bi bi-arrow-down" id="sec4-arrow"></i>
+        </section>
+      </div>
+    </section>
+
+
+    <!-- footer -->
+
+    <footer id="footer">
+      <div class="footer-col footer-col1 ">
+        <h3>樂檸漢堡</h3>
+        <h6>THEFREEN BURGER</h6>
+        <div class="social">
+          <a href="https://lihi1.com/fgqVf/hp2" target="_blank" class="link pe-2"><i class="bi bi-facebook"></i></a>
+          <a href="https://lihi1.com/RRI6N/hp2" target="_blank" class="link px-2"><i class="bi bi-instagram"></i></a>
+          <a href="https://lihivip.com/tll/hp2" target="_blank" class="link ps-2"><i class="bi bi-line"></i></a>
+
+        </div>
+        <p class="copyright-text">Copyright 2024 All Right Reserved by THEFREEN INC</p>
+      </div>
+      <div class="footer-col footer-col2">
+        <!-- <button class="footer-button"><p class="my-auto py-2 px-5 footer-items">MENU｜樂檸菜單</p></button>
+        <button class="footer-button"><p class="my-auto py-2 px-5 footer-items">STORE｜門市資訊</p></button>
+        <button class="footer-button"><p class="my-auto py-2 px-5 footer-items">ABOUT｜關於樂檸</p></button>
+        <button class="footer-button"><p class="my-auto py-2 px-5 footer-items">CONTACT：TalkToUs@thefreen.com</p></button> -->
+
+        <button class="learn-more footer-info-bn mx-auto">
+          <a href="./menu.html">
+            <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+            </span>
+            <span class="footer-info-bn-text">MENU｜樂檸菜單</span>
+          </a>
+        </button>
+        <button class="learn-more footer-info-bn mx-auto">
+          <a href="./store.html">
+            <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+            </span>
+            <span class="footer-info-bn-text">STORE｜門市資訊</span>
+          </a>
+        </button>
+        <button class="learn-more footer-info-bn mx-auto">
+          <a href="./about.html">
+            <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+            </span>
+            <span class="footer-info-bn-text">ABOUT｜關於樂檸</span>
+          </a>
+        </button>
+        <button class="learn-more footer-info-bn mx-auto">
+          <span class="circle" aria-hidden="true">
+            <span class="icon arrow"></span>
+          </span>
+          <span class="footer-info-bn-text">MAIL｜<span class="sm-mail">TalkToUs@thefreen.com</span></span>
+        </button>
+      </div>
+
+      <div class="backdrop"></div>
+    </footer>
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>樂檸菜單</title>
+    <link rel="stylesheet" href="./menu.css">
+    <!-- <script src="./menu.js"></script> -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+
+
+</head>
+
+<body>
+    <div class="menu-container ">
+        <!-- header -->
+        <header
+            class="nav-header justify-content-between px-0 py-4 navbar navbar-expand-md fixed-top bg-transparent d-flex">
+            <div class="container-fluid row  ">
+
+                <a href="./home.html" class="navbar-brand col-5 col-md-4 nav-logo mx-3"><img
+                        src="./img/thefreen_logo 1.png" /></a>
+
+                <!-- 電腦版菜單 -->
+                <div class="header-navibar col-md-4 col-6 ms-auto d-none d-md-inline-flex">
+                    <button class="nav-button container-fluid shadow-drop-2-center bn-transition">
+                        <a href="./about.html"> <span class="nav-button-text">關於樂檸</span></a>
+                    </button>
+                    <button class="nav-button container-fluid shadow-drop-2-center bn-transition">
+                        <a href="./store.html"> <span class="nav-button-text">門市資訊</span></span></a>
+                    </button>
+                    <button class="nav-button container-fluid shadow-drop-2-center bn-transition">
+                        <a href="./menu.html"> <span class="nav-button-text">樂檸菜單</span></span></a>
+                    </button>
+                </div>
+
+                <!-- 手機版菜單 -->
+                <button class="navbar-toggler d-md-none d-block col-2 border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end header-navibar-sm d-md-none d-block" tabindex="-1"
+                    id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header mt-4 rounded-pill px-5">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">thefreen burger</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="./home.html">首頁</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./about.html">關於樂檸</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./store.html">門市資訊</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./menu.html">樂檸菜單</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+        <!-- 增高用sec -->
+        <section style="height: 20vmin;"></section>
+
+
+
+        <!-- menu sec -->
+        <!-- ======= Menu Section ======= -->
+        <section id="menu" class="menu">
+            <div class="container" data-aos="fade-up">
+
+                <!-- <div class="section-header">
+                    <h2>Our Menu</h2>
+                    <p>Check Our <span>Yummy Menu</span></p>
+                </div> -->
+
+                <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
+
+                    <li class="nav-item">
+                        <a class="nav-link px-4 rounded-pill text-center active show " data-bs-toggle="tab"
+                            data-bs-target="#menu-meat">
+                            <h4>葷食漢堡</h4>
+                        </a>
+                    </li><!-- End tab nav item -->
+
+                    <li class="nav-item">
+                        <a class="nav-link px-4 rounded-pill text-center" data-bs-toggle="tab"
+                            data-bs-target="#menu-vegan">
+                            <h4>素食漢堡</h4>
+                        </a><!-- End tab nav item -->
+                    </li>
+
+
+                </ul>
+
+                <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
+
+                    <div class="tab-pane fade active show" id="menu-meat">
+
+                        <div class="tab-header text-center">
+                            <p>Menu</p>
+                            <h3 class="text-orange">葷食漢堡</h3>
+                        </div>
+
+                        <div class="row gy-5 gx-3">
+
+                            <div class="col-lg-3 menu-item ">
+                                <a href="#" class="glightbox"><img src="./img/菜單圖片/葷食漢堡/經典大俠牛.png"
+                                        class="menu-img img-fluid" alt=""></a>
+                                <h4>經典大俠牛套餐</h4>
+                                <p class="ingredients">單點160</p>
+                                <p class="price">
+                                    $225
+                                </p>
+                            </div><!-- Menu Item -->
+                            <div class="col-lg-3 menu-item ">
+                                <a href="#" class="glightbox"><img src="./img/菜單圖片/葷食漢堡/花醬大俠牛.png"
+                                        class="menu-img img-fluid" alt=""></a>
+                                <h4>花醬大俠牛套餐</h4>
+                                <p class="ingredients">單點170</p>
+                                <p class="price">
+                                    $235
+                                </p>
+                            </div><!-- Menu Item -->
+                            <div class="col-lg-3 menu-item ">
+                                <a href="#" class="glightbox"><img src="./img/菜單圖片/葷食漢堡/培菇大俠牛.png"
+                                        class="menu-img img-fluid" alt=""></a>
+                                <h4>培菇大俠牛套餐</h4>
+                                <p class="ingredients">單點180</p>
+                                <p class="price">
+                                    $245
+                                </p>
+                            </div><!-- Menu Item -->
+                            <div class="col-lg-3 menu-item ">
+                                <a href="#" class="glightbox"><img src="./img/菜單圖片/葷食漢堡/流金大俠牛.png"
+                                        class="menu-img img-fluid" alt=""></a>
+                                <h4>流金大俠牛套餐</h4>
+                                <p class="ingredients">單點180</p>
+                                <p class="price">
+                                    $245
+                                </p>
+                            </div><!-- Menu Item -->
+                            <div class="col-lg-3 menu-item ">
+                                <a href="#" class="glightbox"><img src="./img/菜單圖片/葷食漢堡/辣醬大俠牛.png"
+                                        class="menu-img img-fluid" alt=""></a>
+                                <h4>辣醬大俠牛套餐</h4>
+                                <p class="ingredients">單點180</p>
+                                <p class="price">
+                                    $245
+                                </p>
+                            </div><!-- Menu Item -->
+                            <div class="col-lg-3 menu-item ">
+                                <a href="#" class="glightbox"><img src="./img/菜單圖片/葷食漢堡/味噌大俠豬.png"
+                                        class="menu-img img-fluid" alt=""></a>
+                                <h4>味噌大俠豬套餐</h4>
+                                <p class="ingredients">單點145</p>
+                                <p class="price">
+                                    $210
+                                </p>
+                            </div><!-- Menu Item -->
+                            <div class="col-lg-3 menu-item ">
+                                <a href="#" class="glightbox"><img src="./img/菜單圖片/葷食漢堡/鄉村大俠雞.png"
+                                        class="menu-img img-fluid" alt=""></a>
+                                <h4>鄉村大俠雞套餐</h4>
+                                <p class="ingredients">單點160</p>
+                                <p class="price">
+                                    $225
+                                </p>
+                            </div><!-- Menu Item -->
+                            <div class="col-lg-3 menu-item ">
+                                <a href="#" class="glightbox"><img src="./img/菜單圖片/葷食漢堡/鱈堡大俠魚.png"
+                                        class="menu-img img-fluid" alt=""></a>
+                                <h4>鱈堡大俠魚套餐</h4>
+                                <p class="ingredients">單點170</p>
+                                <p class="price">
+                                    $235
+                                </p>
+                            </div><!-- Menu Item -->
+
+
+
+                        </div>
+                    </div><!-- End Starter Menu Content -->
+
+                    <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
+
+                        <div class="tab-pane fade active show" id="menu-vegan">
+
+                            <div class="tab-header text-center">
+                                <p>Menu</p>
+                                <h3 class="text-green">素食漢堡</h3>
+                            </div>
+
+                            <div class="row gy-5 gx-3">
+
+
+                                <div class="col-lg-3 menu-item ">
+                                    <a href="#" class="glightbox"><img src="./img/菜單圖片/蔬食漢堡/爆炸大俠菇.png"
+                                            class="menu-img img-fluid" alt=""></a>
+                                    <h4>爆炸大俠菇套餐</h4>
+                                    <p class="ingredients">單點145</p>
+                                    <p class="price">
+                                        $210
+                                    </p>
+                                </div><!-- Menu Item -->
+                                <div class="col-lg-3 menu-item ">
+                                    <a href="#" class="glightbox"><img src="./img/菜單圖片/蔬食漢堡/炭燒大俠蔬食.png"
+                                            class="menu-img img-fluid" alt=""></a>
+                                    <h4>炭燒大俠蔬食套餐</h4>
+                                    <p class="ingredients">單點165</p>
+                                    <p class="price">
+                                        $230
+                                    </p>
+                                </div><!-- Menu Item -->
+                                <div class="col-lg-3 menu-item ">
+                                    <a href="#" class="glightbox"><img src="./img/菜單圖片/蔬食漢堡/花醬大俠蔬食.png"
+                                            class="menu-img img-fluid" alt=""></a>
+                                    <h4>花醬大俠蔬食套餐</h4>
+                                    <p class="ingredients">單點170</p>
+                                    <p class="price">
+                                        $235
+                                    </p>
+                                </div><!-- Menu Item -->
+
+                                <div class="col-lg-3 menu-item ">
+                                    <a href="#" class="glightbox"><img src="./img/菜單圖片/蔬食漢堡/鄉村大俠蔬食.png"
+                                            class="menu-img img-fluid" alt=""></a>
+                                    <h4>鄉村大俠蔬食套餐</h4>
+                                    <p class="ingredients">單點170</p>
+                                    <p class="price">
+                                        $235
+                                    </p>
+                                </div><!-- Menu Item -->
+                                <div class="col-lg-3 menu-item ">
+                                    <a href="#" class="glightbox"><img src="./img/菜單圖片/蔬食漢堡/塔塔大俠蔬食.png"
+                                            class="menu-img img-fluid" alt=""></a>
+                                    <h4>塔塔大俠蔬食套餐</h4>
+                                    <p class="ingredients">單點180</p>
+                                    <p class="price">
+                                        $245
+                                    </p>
+                                </div><!-- Menu Item -->
+                                <div class="col-lg-3 menu-item ">
+                                    <a href="#" class="glightbox"><img src="./img/菜單圖片/蔬食漢堡/經典大俠蔬食.png"
+                                            class="menu-img img-fluid" alt=""></a>
+                                    <h4>經典大俠蔬食套餐</h4>
+                                    <p class="ingredients">單點180</p>
+                                    <p class="price">
+                                        $245
+                                    </p>
+                                </div><!-- Menu Item -->
+                                <div class="col-lg-3 menu-item ">
+                                    <a href="#" class="glightbox"><img src="./img/菜單圖片/蔬食漢堡/辣醬大俠蔬食.png"
+                                            class="menu-img img-fluid" alt=""></a>
+                                    <h4>辣醬大俠蔬食套餐</h4>
+                                    <p class="ingredients">單點190</p>
+                                    <p class="price">
+                                        $255
+                                    </p>
+                                </div><!-- Menu Item -->
+                                <div class="col-lg-3 menu-item ">
+                                    <a href="#" class="glightbox"><img src="./img/菜單圖片/蔬食漢堡/流金大俠蔬食.png"
+                                            class="menu-img img-fluid" alt=""></a>
+                                    <h4>流金大俠蔬食套餐</h4>
+                                    <p class="ingredients">單點190</p>
+                                    <p class="price">
+                                        $255
+                                    </p>
+                                </div><!-- Menu Item -->
+
+
+
+                            </div>
+                        </div><!-- End Starter Menu Content -->
+
+
+
+                    </div>
+                </div><!-- End Lunch Menu Content -->
+
+
+
+            </div>
+
+    </div>
+
+
+
+    </section><!-- End Menu Section -->
+
+
+    <!-- 增高用sec -->
+    <section style="height: 5vmin;"></section>
+
+
+
+    <!-- 套餐 menu sec -->
+    <section id="sec2-menu" class="menu">
+
+        <div class="container " data-aos="fade-up">
+            <div class="menu-set-circle">
+                <div class="menu-bg">
+
+
+
+
+                    <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
+
+                        <div class="tab-pane fade active show" id="menu-set">
+
+                            <div class="tab-header text-center">
+                                <p>MEAL SET</p>
+                                <h3 class="">套餐搭配</h3>
+                            </div>
+
+                            <div class="row gy-5 gx-3">
+
+
+                                <div class="col-lg-4 menu-item ">
+                                    <a href="#" class="glightbox"><img src="./img/菜單圖片/套餐/經典薯條套餐.png"
+                                            class="menu-set-img img-fluid" alt=""></a>
+                                    <h4>經典薯條套餐</h4>
+                                    <p class="ingredients">套餐隨附：青檸微泡＋中份薯條</p>
+                                    <p class="price">
+                                        ＋$0
+                                    </p>
+                                </div><!-- Menu Item -->
+                                <div class="col-lg-4 menu-item ">
+                                    <a href="#" class="glightbox"><img src="./img/菜單圖片/套餐/菇脆餅套餐.png"
+                                            class="menu-set-img img-fluid" alt=""></a>
+                                    <h4>菇脆餅套餐</h4>
+                                    <p class="ingredients">套餐升級：青檸微泡＋菇脆餅</p>
+                                    <p class="price">
+                                        ＋$5
+                                    </p>
+                                </div><!-- Menu Item -->
+
+                                <div class="col-lg-4 menu-item ">
+                                    <a href="#" class="glightbox"><img src="./img/菜單圖片/套餐/雞塊套餐.png"
+                                            class="menu-set-img img-fluid" alt=""></a>
+                                    <h4>雞塊套餐</h4>
+                                    <p class="ingredients">套餐升級：青檸微泡＋雞塊x5</p>
+                                    <p class="price">
+                                        ＋$15
+                                    </p>
+                                </div><!-- Menu Item -->
+                                <div class="col-lg-4 menu-item ">
+                                    <a href="#" class="glightbox"><img src="./img/菜單圖片/套餐/憨吉套餐.png"
+                                            class="menu-set-img img-fluid" alt=""></a>
+                                    <h4>憨吉套餐</h4>
+                                    <p class="ingredients">套餐升級：青檸微泡＋憨吉脆薯</p>
+                                    <p class="price">
+                                        ＋$15
+                                    </p>
+                                </div><!-- Menu Item -->
+                                <div class="col-lg-4 menu-item ">
+                                    <a href="#" class="glightbox"><img src="./img/菜單圖片/套餐/捲捲套餐.png"
+                                            class="menu-set-img img-fluid" alt=""></a>
+                                    <h4>捲捲套餐</h4>
+                                    <p class="ingredients">套餐升級：青檸微泡＋卷卷鮮蔬杯</p>
+                                    <p class="price">
+                                        ＋$25
+                                    </p>
+                                </div><!-- Menu Item -->
+                                <div class="col-lg-4 menu-item ">
+                                    <a href="#" class="glightbox"><img src="./img/菜單圖片/套餐/優格套餐.png"
+                                            class="menu-set-img img-fluid" alt=""></a>
+                                    <h4>優格套餐</h4>
+                                    <p class="ingredients">套餐升級：青檸微泡＋樂雪優酪</p>
+                                    <p class="price">
+                                        ＋$65
+                                    </p>
+                                </div><!-- Menu Item -->
+
+
+
+
+                            </div>
+                        </div>
+
+
+                    </div><!-- End Starter Menu Content -->
+
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- sec3 其他品項menu -->
+    <section id="sec3-menu" class="menu">
+
+        <div class="container py-5" data-aos="fade-up">
+            <div class="menu-other-circle">
+                <div class="menu-bg">
+
+
+
+
+                    <div class="tab-content py-5" data-aos="fade-up" data-aos-delay="300">
+
+                        <div class="tab-pane fade active show" id="menu-drinks">
+
+                            <div class="tab-header text-center">
+                                <p>DRINKS</p>
+                                <h3 class="">喝點飲料</h3>
+                            </div>
+
+                            <div class="d-grid gy-5 gx-3 ">
+
+
+                                <div class="g-col-lg-6 menu-item-other d-grid">
+                                    <div class="g-col">
+                                        <h4>檸檬輕微泡</h4>
+                                        <p class="ingredients m-0">鮮果微泡系列｜COLD ONLY</p>
+                                    </div>
+                                    <div class="g-col my-auto">
+                                        <p class="price m-0">
+                                            $55
+                                        </p>
+                                    </div>
+                                </div><!-- Menu Item -->
+                                <div class="g-col-lg-6 menu-item-other d-grid">
+                                    <div class="g-col">
+                                        <h4>青檸鮮果微泡</h4>
+                                        <p class="ingredients m-0">鮮果微泡系列｜COLD ONLY</p>
+                                    </div>
+                                    <div class="g-col my-auto">
+                                        <p class="price m-0">
+                                            $65
+                                        </p>
+                                    </div>
+                                </div><!-- Menu Item -->
+                                <div class="g-col-lg-6 menu-item-other d-grid">
+                                    <div class="g-col">
+                                        <h4>胡蔔鮮果微泡</h4>
+                                        <p class="ingredients m-0">鮮果微泡系列｜COLD ONLY</p>
+                                    </div>
+                                    <div class="g-col my-auto">
+                                        <p class="price m-0">
+                                            $75
+                                        </p>
+                                    </div>
+                                </div><!-- Menu Item -->
+                                <div class="g-col-lg-6 menu-item-other d-grid">
+                                    <div class="g-col">
+                                        <h4>鳳梨鮮果微泡</h4>
+                                        <p class="ingredients m-0">鮮果微泡系列｜COLD ONLY</p>
+                                    </div>
+                                    <div class="g-col my-auto">
+                                        <p class="price m-0">
+                                            $80
+                                        </p>
+                                    </div>
+                                </div><!-- Menu Item -->
+                                <div class="g-col-lg-6 menu-item-other d-grid">
+                                    <div class="g-col">
+                                        <h4>青檸優格飲</h4>
+                                        <p class="ingredients m-0">優格飲系列｜COLD ONLY</p>
+                                    </div>
+                                    <div class="g-col my-auto">
+                                        <p class="price m-0">
+                                            $80
+                                        </p>
+                                    </div>
+                                </div><!-- Menu Item -->
+                                <div class="g-col-lg-6 menu-item-other d-grid">
+                                    <div class="g-col">
+                                        <h4>鳳梨優格飲</h4>
+                                        <p class="ingredients m-0">優格飲系列｜COLD ONLY</p>
+                                    </div>
+                                    <div class="g-col my-auto">
+                                        <p class="price m-0">
+                                            $80
+                                        </p>
+                                    </div>
+                                </div><!-- Menu Item -->
+                                <div class="g-col-lg-6 menu-item-other d-grid">
+                                    <div class="g-col">
+                                        <h4>檸檬菁茶</h4>
+                                        <p class="ingredients m-0">茗茶系列｜COLD ONLY</p>
+                                    </div>
+                                    <div class="g-col my-auto">
+                                        <p class="price m-0">
+                                            $55
+                                        </p>
+                                    </div>
+                                </div><!-- Menu Item -->
+                                <div class="g-col-lg-6 menu-item-other d-grid">
+                                    <div class="g-col">
+                                        <h4>無糖菁茶</h4>
+                                        <p class="ingredients m-0">茗茶系列｜COLD ONLY</p>
+                                    </div>
+                                    <div class="g-col my-auto">
+                                        <p class="price m-0">
+                                            $55
+                                        </p>
+                                    </div>
+                                </div><!-- Menu Item -->
+                                <div class="g-col-lg-6 menu-item-other d-grid">
+                                    <div class="g-col">
+                                        <h4>鳳梨菁茶</h4>
+                                        <p class="ingredients m-0">茗茶系列｜COLD ONLY</p>
+                                    </div>
+                                    <div class="g-col my-auto">
+                                        <p class="price m-0">
+                                            $75
+                                        </p>
+                                    </div>
+                                </div><!-- Menu Item -->
+                                <div class="g-col-lg-6 menu-item-other d-grid">
+                                    <div class="g-col">
+                                        <h4>香草南非國寶茶</h4>
+                                        <p class="ingredients m-0">茗茶系列｜HOT ONLY</p>
+                                    </div>
+                                    <div class="g-col my-auto">
+                                        <p class="price m-0">
+                                            $70
+                                        </p>
+                                    </div>
+                                </div><!-- Menu Item -->
+                                <!-- --咖啡系列--- -->
+                                <div class="g-col-lg-6 menu-item-other d-grid">
+                                    <div class="g-col">
+                                        <h4>經典美式</h4>
+                                        <p class="ingredients m-0">咖啡系列｜HOT / COLD</p>
+                                    </div>
+                                    <div class="g-col my-auto">
+                                        <p class="price m-0">
+                                            $60
+                                        </p>
+                                    </div>
+                                </div><!-- Menu Item -->
+                                <div class="g-col-lg-6 menu-item-other d-grid">
+                                    <div class="g-col">
+                                        <h4>檸檬冰咖啡</h4>
+                                        <p class="ingredients m-0">咖啡系列｜COLD ONLY</p>
+                                    </div>
+                                    <div class="g-col my-auto">
+                                        <p class="price m-0">
+                                            $75
+                                        </p>
+                                    </div>
+                                </div><!-- Menu Item -->
+                                <div class="g-col-lg-6 menu-item-other d-grid">
+                                    <div class="g-col">
+                                        <h4>拿鐵咖啡</h4>
+                                        <p class="ingredients m-0">咖啡系列｜HOT / COLD</p>
+                                    </div>
+                                    <div class="g-col my-auto">
+                                        <p class="price m-0">
+                                            $80
+                                        </p>
+                                    </div>
+                                </div><!-- Menu Item -->
+                                <div class="g-col-lg-6 menu-item-other d-grid">
+                                    <div class="g-col">
+                                        <h4>燕麥拿鐵</h4>
+                                        <p class="ingredients m-0">咖啡系列｜COLD ONLY</p>
+                                    </div>
+                                    <div class="g-col my-auto">
+                                        <p class="price m-0">
+                                            $85
+                                        </p>
+                                    </div>
+                                </div><!-- Menu Item -->
+
+
+
+
+
+                            </div>
+                        </div>
+
+
+                    </div><!-- End Starter Menu Content -->
+
+                    <!-- 套餐加購區 -->
+                    <div class="tab-content py-5" data-aos="fade-up" data-aos-delay="300">
+
+                        <div class="tab-pane fade active show" id="menu-addmore">
+
+                            <div class="tab-header text-center">
+                                <p>SATISFY YOU MORE</p>
+                                <h3 class="">加購區</h3>
+                            </div>
+
+                            <div class="d-grid gy-5 gx-3 ">
+
+
+                                <!-- 葷食 -->
+                                <div class="g-col-lg-6 menu-item-other d-grid menu-other-bg-o">
+                                    <div class="g-col">
+                                        <h4>起司條(3條)</h4>
+                                        <p class="ingredients m-0">原價55元</p>
+                                    </div>
+                                    <div class="g-col my-auto">
+                                        <p class="price m-0">
+                                            $49
+                                        </p>
+                                    </div>
+                                </div><!-- Menu Item -->
+                                <div class="g-col-lg-6 menu-item-other d-grid menu-other-bg-o">
+                                    <div class="g-col">
+                                        <h4>紐德雞翅(2支)</h4>
+                                        <p class="ingredients m-0">原價55元</p>
+                                    </div>
+                                    <div class="g-col my-auto">
+                                        <p class="price m-0">
+                                            $49
+                                        </p>
+                                    </div>
+                                </div><!-- Menu Item -->
+                                <div class="g-col-lg-6 menu-item-other d-grid menu-other-bg-o">
+                                    <div class="g-col">
+                                        <h4>經典雞塊(6塊/8塊)</h4>
+                                        <p class="ingredients m-0">原價 75/99 元</p>
+                                    </div>
+                                    <div class="g-col my-auto">
+                                        <p class="price m-0">
+                                            $59 / 79
+                                        </p>
+                                    </div>
+                                </div><!-- Menu Item -->
+
+                                <div class="g-col-lg-6 menu-item-other d-grid menu-other-bg-o">
+                                    <div class="g-col">
+                                        <h4>鄉村雞胸</h4>
+                                        <p class="ingredients m-0">原價65元</p>
+                                    </div>
+                                    <div class="g-col my-auto">
+                                        <p class="price m-0">
+                                            $59
+                                        </p>
+                                    </div>
+                                </div><!-- Menu Item -->
+
+                                <!-- 蔬食 -->
+                                <div class="g-col-lg-6 menu-item-other d-grid menu-other-bg-g">
+                                    <div class="g-col">
+                                        <h4>炸菇天婦羅</h4>
+                                        <p class="ingredients m-0">原價55元</p>
+                                    </div>
+                                    <div class="g-col my-auto">
+                                        <p class="price m-0">
+                                            $50
+                                        </p>
+                                    </div>
+                                </div><!-- Menu Item -->
+                                <div class="g-col-lg-6 menu-item-other d-grid menu-other-bg-g">
+                                    <div class="g-col">
+                                        <h4>憨吉脆薯</h4>
+                                        <p class="ingredients m-0">原價65元</p>
+                                    </div>
+                                    <div class="g-col my-auto">
+                                        <p class="price m-0">
+                                            $59
+                                        </p>
+                                    </div>
+                                </div><!-- Menu Item -->
+                                <div class="g-col-lg-6 menu-item-other d-grid menu-other-bg-g">
+                                    <div class="g-col">
+                                        <h4>植蔬丸</h4>
+                                        <p class="ingredients m-0">原價60元</p>
+                                    </div>
+                                    <div class="g-col my-auto">
+                                        <p class="price m-0">
+                                            $55
+                                        </p>
+                                    </div>
+                                </div><!-- Menu Item -->
+                                <div class="g-col-lg-6 menu-item-other d-grid menu-other-bg-g">
+                                    <div class="g-col">
+                                        <h4>直刨薯條</h4>
+                                        <p class="ingredients m-0">原價65元</p>
+                                    </div>
+                                    <div class="g-col my-auto">
+                                        <p class="price m-0">
+                                            $60
+                                        </p>
+                                    </div>
+                                </div><!-- Menu Item -->
+                                <div class="g-col-lg-6 menu-item-other d-grid menu-other-bg-g">
+                                    <div class="g-col">
+                                        <h4>卷卷鮮蔬杯</h4>
+                                        <p class="ingredients m-0">原價65元</p>
+                                    </div>
+                                    <div class="g-col my-auto">
+                                        <p class="price m-0">
+                                            $75
+                                        </p>
+                                    </div>
+                                </div><!-- Menu Item -->
+                                <div class="g-col-lg-6 menu-item-other d-grid menu-other-bg-g">
+                                    <div class="g-col">
+                                        <h4>樂雪優格</h4>
+                                        <p class="ingredients m-0">原價100元</p>
+                                    </div>
+                                    <div class="g-col my-auto">
+                                        <p class="price m-0">
+                                            $120
+                                        </p>
+                                    </div>
+                                </div><!-- Menu Item -->
+
+
+
+
+
+
+
+                            </div>
+                        </div><!-- End Starter Menu Content -->
+
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section><!-- End Menu Section -->
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+
+    <footer id="footer">
+        <div class="footer-col footer-col1 ">
+            <h3>樂檸漢堡</h3>
+            <h6>THEFREEN BURGER</h6>
+            <div class="social">
+                <a href="https://lihi1.com/fgqVf/hp2" target="_blank" class="link pe-2"><i class="bi bi-facebook"></i></a>
+                <a href="https://lihi1.com/RRI6N/hp2" target="_blank" class="link px-2"><i class="bi bi-instagram"></i></a>
+                <a href="https://lihivip.com/tll/hp2" target="_blank" class="link ps-2"><i class="bi bi-line"></i></a>
+
+            </div>
+            <p class="copyright-text">Copyright 2024 All Right Reserved by THEFREEN INC</p>
+        </div>
+        <div class="footer-col footer-col2">
+
+            <button class="learn-more footer-info-bn mx-auto">
+                <a href="./menu.html">
+                    <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                    </span>
+                    <span class="footer-info-bn-text">MENU｜樂檸菜單</span>
+                </a>
+            </button>
+            <button class="learn-more footer-info-bn mx-auto">
+                <a href="./store.html">
+                    <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                    </span>
+                    <span class="footer-info-bn-text">STORE｜門市資訊</span>
+                </a>
+            </button>
+            <button class="learn-more footer-info-bn mx-auto">
+                <a href="./about.html">
+                    <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                    </span>
+                    <span class="footer-info-bn-text">ABOUT｜關於樂檸</span>
+                </a>
+            </button>
+            <button class="learn-more footer-info-bn mx-auto">
+                <span class="circle" aria-hidden="true">
+                    <span class="icon arrow"></span>
+                </span>
+                <span class="footer-info-bn-text">MAIL｜<span class="sm-mail">TalkToUs@thefreen.com</span></span>
+            </button>
+        </div>
+
+        <div class="backdrop"></div>
+    </footer>
+
+    </div>
+
+</body>
+
+</html>
