@@ -449,6 +449,7 @@ footer::before {
 @media screen and (max-width:576px) {
     .footer-info-bn.learn-more .footer-info-bn-text {
         left: 15vw;
+        font-size: 3.5vmin;
     }
 
     .sm-mail {
