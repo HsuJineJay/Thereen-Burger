@@ -450,6 +450,8 @@ footer::before {
 @media screen and (max-width:576px) {
     .footer-info-bn.learn-more .footer-info-bn-text {
         left: 15vw;
+        font-size: 3.5vmin;
+
     }
 
     .sm-mail {
@@ -694,7 +696,7 @@ footer::before {
 }
 @media screen and (max-width:576px) {
     .store-text>h5 {
-        font-size: 4vmin;
+        font-size: 5vmin;
     }
 }
 .store-text>h6 {
@@ -708,7 +710,7 @@ footer::before {
 }
 @media screen and (max-width:576px) {
     .store-text>h6 {
-        font-size: .5vmin;
+        font-size: 3.5vmin;
         letter-spacing: 0.1rem;
 
     }
@@ -725,7 +727,7 @@ footer::before {
 
 @media screen and (max-width:576px) {
     .store-text>p {
-        font-size: .5vmin;
+        font-size: 3vmin;
         letter-spacing: 0.1rem;
     }
 }
