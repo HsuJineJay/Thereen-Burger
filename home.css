@@ -525,7 +525,7 @@ a {
 @media screen and (max-width:576px) {
     .smtext-con>p {
         letter-spacing: 0.1rem;
-        font-size: 0.1vmin;
+        font-size: 3vmin;
 
     }
 }
@@ -586,6 +586,11 @@ a {
     letter-spacing: 0.2rem;
     text-transform: capitalize;
 }
+@media screen and (max-width:576px) {
+    .sec2-text-tp>h6 {
+        font-size: 3vmin;
+    }
+}
 
 .sec2-text-tp>h4 {
     color: var(--tf--black);
@@ -594,6 +599,11 @@ a {
     font-size: 3vmin;
     font-weight: 400;
     letter-spacing: 0.2rem;
+}
+@media screen and (max-width:576px) {
+    .sec2-text-tp>h4 {
+        font-size: 3.5vmin;
+    }
 }
 
 .sec2-text-md>h3 {
@@ -605,6 +615,11 @@ a {
     letter-spacing: 0.2rem;
 
     padding-left: 0;
+}
+@media screen and (max-width:576px) {
+    .sec2-text-md>h3 {
+        font-size: 18vmin;
+    }
 }
 
 /* @media screen and (max-width:576px) {
@@ -626,6 +641,11 @@ a {
     font-weight: 100;
     letter-spacing: 1rem;
     text-transform: uppercase;
+}
+@media screen and (max-width:576px) {
+    .sec2-text-ed>h5 {
+        font-size: 3vmin;
+    }
 }
 
 /* @media screen and (max-width:576px) {
@@ -696,7 +716,7 @@ a {
 
 @media screen and (max-width:576px) {
     .store-text>p {
-        font-size: .5vmin;
+        font-size: 3vmin;
         letter-spacing: 0.1rem;
     }
 }
@@ -1616,6 +1636,7 @@ footer::before {
    @media screen and (max-width:576px){
     .footer-info-bn.learn-more .footer-info-bn-text {
         left: 15vw;
+        font-size: 3.5vmin;
     }
     .sm-mail{
         font-weight: 300;
