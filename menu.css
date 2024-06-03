@@ -789,7 +789,7 @@ footer::before {
     
 }
 @media screen and (max-width:576px) {
-    .menu .tab-content .menu-item .ingredients{
+    .menu .tab-content .menu-item-other .ingredients{
         font-size: 3.5vmin;
     }
 }
