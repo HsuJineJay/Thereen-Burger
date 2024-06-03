@@ -670,7 +670,7 @@ main {
 
 main h1 {
     font-weight: 100;
-    font-size: 8vmin;
+    font-size: 10vmin;
     font-family: var(--tf--font-chin);
     letter-spacing: 0;
     color: var(--tf-bg-ligthGray);
