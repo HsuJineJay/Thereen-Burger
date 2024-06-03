@@ -712,6 +712,7 @@ footer::before {
     .store-text>h6 {
         font-size: 3.5vmin;
         letter-spacing: 0.1rem;
+        line-height: 150%;
 
     }
 }
