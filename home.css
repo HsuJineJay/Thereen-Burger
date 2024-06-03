@@ -757,6 +757,7 @@ a {
 /* sec3 跑馬燈 */
 .run-line-block {
     background-color: var(--tf--green);
+    background-image: url(./img/noise-light.png);
     letter-spacing: 0;
     border-top-left-radius: 3.75rem;
     border-top-right-radius: 3.75rem;
@@ -882,7 +883,7 @@ a {
     align-items: center;
     padding: 50px 10vw;
 
-    background-image: linear-gradient(to right, var(--tf--green) 40%, var(--tf-bg-ligthGray) 90%);
+    background-image:url(./img/noise-light.png) , linear-gradient(to right, var(--tf--green) 40%, var(--tf-bg-ligthGray) 90%);
 
 
     /* &>* {
