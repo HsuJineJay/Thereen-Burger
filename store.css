@@ -729,6 +729,7 @@ footer::before {
     .store-text>p {
         font-size: 3vmin;
         letter-spacing: 0.1rem;
+        line-height: 150%;
     }
 }
 
