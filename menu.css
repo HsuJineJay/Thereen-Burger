@@ -578,6 +578,11 @@ footer::before {
     margin-bottom: 0;
     font-family: var(--tf--font-eng);
 }
+@media screen and (max-width:576px) {
+    .menu .tab-content .tab-header p{
+        font-size: 4vmin;
+    }
+}
 
 .menu .tab-content .tab-header h3 {
     font-size: 5vmin;
@@ -777,6 +782,11 @@ footer::before {
     letter-spacing: 0.1rem;
     color: #8d8d9b;
     
+}
+@media screen and (max-width:576px) {
+    .menu .tab-content .menu-item .ingredients{
+        font-size: 3vmin;
+    }
 }
 
 .menu .tab-content .menu-item-other .price {
