@@ -687,6 +687,11 @@ main h2 {
     line-height: 150%;
     letter-spacing: 0.3rem;
 }
+@media screen and (max-width:576px) {
+    main h2{
+        font-size: 4.5vmin;
+    }
+}
 
 main p {
     font-family: var(--tf--font-chin);
@@ -696,6 +701,11 @@ main p {
     color: var(--tf--black); 
     margin-bottom: 0;
 
+}
+@media screen and (max-width:576px) {
+    main h2{
+        font-size: 3vmin;
+    }
 }
 
 main .btn {
