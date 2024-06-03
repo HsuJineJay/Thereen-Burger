@@ -696,8 +696,8 @@ main h2 {
 main p {
     font-family: var(--tf--font-chin);
     font-weight: 300;
-    line-height: 1.42;
-    font-size: 2vmin;
+    line-height: 160%;
+    font-size: 1.7vmin;
     color: var(--tf--black); 
     margin-bottom: 0;
 
