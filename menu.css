@@ -676,6 +676,11 @@ footer::before {
     color: #8d8d9b;
     margin-bottom: 5px;
 }
+@media screen and (max-width:576px) {
+    .menu .tab-content .menu-item .ingredients{
+        font-size: 3.5vmin;
+    }
+}
 
 .menu .tab-content .menu-item .price {
     font-size: 2.8vmin;
@@ -785,7 +790,7 @@ footer::before {
 }
 @media screen and (max-width:576px) {
     .menu .tab-content .menu-item .ingredients{
-        font-size: 3vmin;
+        font-size: 3.5vmin;
     }
 }
 
