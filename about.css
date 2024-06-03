@@ -681,7 +681,7 @@ main h1 {
 
 main h2 {
     font-weight: 600;
-    font-size: 2.5vmin;
+    font-size: 3.5vmin;
     font-family: var(--tf--font-chin);
     color: var(--tf--green);
     line-height: 150%;
@@ -697,14 +697,15 @@ main p {
     font-family: var(--tf--font-chin);
     font-weight: 300;
     line-height: 1.42;
-    font-size: 1vmin;
+    font-size: 2vmin;
     color: var(--tf--black); 
     margin-bottom: 0;
 
 }
 @media screen and (max-width:576px) {
     main p{
-        font-size: 3vmin;
+        font-size: 3.5vmin;
+        line-height: 200%;
     }
 }
 
