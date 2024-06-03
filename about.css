@@ -689,7 +689,7 @@ main h2 {
 }
 @media screen and (max-width:576px) {
     main h2{
-        font-size: 4.5vmin;
+        font-size: 6vmin;
     }
 }
 
@@ -703,7 +703,7 @@ main p {
 
 }
 @media screen and (max-width:576px) {
-    main h2{
+    main p{
         font-size: 3vmin;
     }
 }
