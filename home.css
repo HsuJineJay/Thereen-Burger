@@ -823,6 +823,48 @@ a {
 }
 
 
+/* 水平bento後 跑馬燈 */
+#run-text-move-up{
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border:1px solid rgba(255, 255, 255, 0.6);
+
+}
+
+#run-text-move-up .run-part_wrap{
+    background-color:  rgba(120, 188, 39, 0.6);
+    /* backdrop-filter: blur(20px); */
+}
+#run-text-move-up>.run-text_wrapper{
+    font-size: 10vmin;
+    color: var(--tf--white);
+    padding-top: 8vmin;
+    padding-bottom: 0vmin;
+}
+@media screen and (max-width:576px) {
+    #run-text-move-up>.run-text_wrapper{
+        font-size: 30vmin;
+        padding-top: 15vmin;
+        padding-bottom: 20vmin;
+    }
+}
+
+/* 跑馬燈移動 */
+#run-text-move-up {
+    transform-origin: 50% 0%;
+    animation: move-up both ease-in;
+    animation-timeline: view();
+    animation-range: entry 50% entry 120% ;
+    view-timeline: --sec4;
+}
+@keyframes move-up {
+    to {
+        transform: translateY(-10vmin);
+    }
+}
+
+
+
 /* 水平移動sec */
 #sectionPin {
     height: 100vh;
